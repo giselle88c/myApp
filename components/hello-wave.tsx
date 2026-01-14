@@ -8,12 +8,12 @@ export function HelloWave() {
         lineHeight: 32,
         marginTop: -6,
         animationName: {
-          '50%': { transform: [{ rotate: '25deg' }] },
+          '50%': { transform: [{ rotate: '15deg' }] },
         },
-        animationIterationCount: 4,
+        animationIterationCount:30 ,
         animationDuration: '300ms',
       }}>
-      👋
+      👋Halo
     </Animated.Text>
   );
 }
