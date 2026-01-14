@@ -43,7 +43,7 @@ export default function HomeScreen() {
       Animated.timing(translateXAnim, {
         toValue: 0, // Final position (translate to the right)
         duration: 3000, // Duration for translation (3 seconds)
-        useNativeDriver: true,
+        //useNativeDriver: true,
       }),
     ]).start();
   }, [fadeAnim, scaleAnim, translateXAnim]);
