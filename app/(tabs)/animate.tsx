@@ -35,8 +35,15 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Image
+            source={require('@/assets/images/myham.jpg')}
+            style={styles.ham_ham}
+          />
       <TouchableWithoutFeedback onPress={handleTouch}>
+        
         <View style={styles.touchArea}>
+          
+
           <Animated.Image
             source={require('@/assets/images/heart.png')} // Make sure you have a heart image in assets
             style={[
@@ -49,9 +56,15 @@ export default function App() {
               },
             ]}
           />
+
+          
         </View>
+        
       </TouchableWithoutFeedback>
+      
     </View>
+
+
   );
 }
 
@@ -72,5 +85,9 @@ const styles = StyleSheet.create({
     width: 50, // Set your heart image width
     height: 50, // Set your heart image height
     position: 'absolute',
+  },
+  ham_ham: {
+    height: 300,
+    width: 300,
   },
 });
